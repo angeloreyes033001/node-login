@@ -5,8 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js",
-    "postinstall": "prisma generate && prisma migrate deploy"
+    "build": "npm build",
+    "migrate": "prisma migrate deploy",
+    "postinstall": "prisma generate",
+    "start": "node src/server.js"
+    
   },
   "keywords": [],
   "author": "",
